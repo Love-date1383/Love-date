@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوت ویژه ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>❤️</span>
+</div>
+
+<section class="page active" id="page1">
+
+    <div class="card">
+
+        <div class="steps">
+            <span class="active-dot"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="emoji">💌</div>
+
+        <h1>سلام 🌹</h1>
+
+        <p>
+            یه سورپرایز کوچولو برات آماده کردم...
+        </p>
+
+        <button id="startBtn">
+            شروع ✨
+        </button>
+
+    </div>
+
+</section>
+<section class="page" id="page2">
+
+    <div class="card">
+
+        <div class="steps">
+            <span class="active-dot"></span>
+            <span class="active-dot"></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="emoji">🥺</div>
+
+        <h1>با من میای سر قرار؟</h1>
+
+        <p class="message">
+            فقط یه سؤال ساده‌ست...<br>
+            جواب درست هم فقط یکیشه 😉
+        </p>
+
+        <p id="noMessage"></p>
+
+        <div class="buttons">
+
+            <button id="yesBtn">
+                آره 💕
+
+            </button>
+
+            <button id="noBtn">
+                نه
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="page" id="page3">
+
+    <div class="card">
+
+        <div class="steps">
+            <span class="active-dot"></span>
+            <span class="active-dot"></span>
+            <span class="active-dot"></span>
+            <span></span>
+        </div>
+
+        <div class="emoji">📅</div>
+
+        <h1>چه روزی وقت داری؟</h1>
+
+        <p>
+            لطفاً تاریخ و ساعت مناسب رو انتخاب کن 💕
+        </p>
+
+        <input
+            type="text"
+            id="dateInput"
+            placeholder="📅 انتخاب تاریخ">
+           
+    <div id="calendar" class="calendar">
+
+    <div class="calendar-header">
+
+        <button id="prevMonth">◀️</button>
+
+        <h3 id="monthTitle"></h3>
+
+        <button id="nextMonth">▶️</button>
+
+    </div>
+
+    <div class="weekdays">
+        <span>ش</span>
+        <span>ی</span>
+        <span>د</span>
+        <span>س</span>
+        <span>چ</span>
+        <span>پ</span>
+        <span>ج</span>
+    </div>
+
+    <div id="days"></div>
+
+</div>
+
+        <br><br>
+
+        <input
+            type="time"
+            id="timeInput">
+
+        <br><br>
+        
+ 
+
+<div id="timePicker" class="time-picker">
+
+    <div class="time-picker-box">
+
+        <h3>🕒 انتخاب ساعت</h3>
+
+       <div id="timeWheel">
+
+    <div class="wheel-column">
+        <h4>ساعت</h4>
+        <div id="hourWheel" class="wheel-list"></div>
+    </div>
+
+    <div class="wheel-column">
+        <h4>دقیقه</h4>
+        <div id="minuteWheel" class="wheel-list"></div>
+    </div>
+
+</div>
+<button id="confirmTime">
+    ✅ تأیید
+</button>
+        <button id="closeTimePicker">
+            بستن
+        </button>
+
+    </div>
+    
+
+</div>
+<button id="nextToFood">
+            ادامه 🍽
+        </button>
+</section>
+<section id="page4" class="page">
+
+    <h2>🍽 چی سفارش میدی؟</h2>
+
+    <p class="food-subtitle">
+        یه چیز خوشمزه انتخاب کن که مهمونت باشیم 👀
+    </p>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            🍕
+            <h3>پیتزا</h3>
+        </div>
+
+        <div class="food-card">
+            🍔
+            <h3>برگر</h3>
+        </div>
+
+        <div class="food-card">
+            🍝
+            <h3>پاستا</h3>
+        </div>
+
+        <div class="food-card">
+            🍗
+            <h3>غذای ایرانی</h3>
+        </div>
+
+    </div>
+
+    <button id="foodNextBtn" disabled>
+        ادامه ➡️
+    </button>
+
+</section>
+
+<section id="page5" class="page">
+    <div class="confetti">
+    <span>🎉</span>
+    <span>✨</span>
+    <span>🎊</span>
+    <span>💛</span>
+    <span>💖</span>
+    <span>🎉</span>
+    <span>✨</span>
+    <span>🎊</span>
+</div>
+    <div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>💞</span>
+    <span>❤️</span>
+    <span>💖</span>
+</div>
+    <div class="final-card">
+
+        <div class="celebration">🎉</div>
+
+        <h2>خوشحالم نگفتی نه! ❤️</h2>
+
+        <p id="finalInfo"></p>
+
+        <p class="final-message">
+            🚗 پس آماده باش، خودم میام دنبالت.
+        </p>
+
+        <p class="final-small">
+            ممنون که دعوتم رو قبول کردی 🤍
+        </p>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
