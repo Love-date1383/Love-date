@@ -145,7 +145,8 @@ if (currentYear === 1405 && currentMonth === 5 && i < 5) {
     const input = document.getElementById("dateInput");
     const cal = document.getElementById("calendar");
 
-    input.value = monthNames[currentMonth] + " " + this.innerText + " " + currentYear;
+    input.value = (this.innerText + " " + monthNames[currentMonth] + " " + currentYear)
+        .replace(/[0-9]/g, digit => "۰۱۲۳۴۵۶۷۸۹"[Number(digit)]);
     if(selectedDay){
     selectedDay.classList.remove("selected-day");
 }
