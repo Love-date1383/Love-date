@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دعوت ویژه ❤️</title>
+    <title>یه قرار، فقط من و تو ❤️</title>
+    <meta name="theme-color" content="#7e2442">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<header class="site-header"><span class="brand">Love <i>date</i><span class="brand-heart">♥</span></span><span class="header-note">یه دعوت، مخصوص تو</span></header>
+<main>
 
 <div class="hearts">
     <span>❤️</span>
@@ -30,14 +33,15 @@
 
         <div class="emoji">💌</div>
 
-        <h1>سلام 🌹</h1>
+        <span class="eyebrow">فقط برای تو</span>
+        <h1>یه قرارِ قشنگ،<br><em>من و تو.</em></h1>
 
         <p>
             یه سورپرایز کوچولو برات آماده کردم...
         </p>
 
         <button id="startBtn">
-            شروع ✨
+            بازش کن <span aria-hidden="true">←</span>
         </button>
 
     </div>
@@ -102,18 +106,18 @@
 
         <input
             type="text"
-            id="dateInput"
+            id="dateInput" aria-label="انتخاب تاریخ قرار" readonly
             placeholder="📅 انتخاب تاریخ">
            
     <div id="calendar" class="calendar">
 
     <div class="calendar-header">
 
-        <button id="prevMonth">◀️</button>
+        <button id="prevMonth" aria-label="ماه قبل">‹</button>
 
         <h3 id="monthTitle"></h3>
 
-        <button id="nextMonth">▶️</button>
+        <button id="nextMonth" aria-label="ماه بعد">›</button>
 
     </div>
 
@@ -131,13 +135,13 @@
 
 </div>
 
-        <br><br>
+        
 
         <input
             type="time"
-            id="timeInput">
+            id="timeInput" aria-label="انتخاب ساعت قرار">
 
-        <br><br>
+        
         
  
 
@@ -174,8 +178,11 @@
 <button id="nextToFood">
             ادامه 🍽
         </button>
+</div>
 </section>
 <section id="page4" class="page">
+<div class="card food-panel">
+<div class="steps" aria-label="مرحله چهارم"><span class="active-dot"></span><span class="active-dot"></span><span class="active-dot"></span><span class="active-dot"></span></div>
 
     <h2>🍽 چی سفارش میدی؟</h2>
 
@@ -210,7 +217,7 @@
     <button id="foodNextBtn" disabled>
         ادامه ➡️
     </button>
-
+</div>
 </section>
 
 <section id="page5" class="page">
@@ -253,6 +260,8 @@
 
 </section>
 
+</main>
+<footer class="site-footer">با عشق، برای تو <span>♡</span></footer>
 <script src="script.js"></script>
 
 </body>
